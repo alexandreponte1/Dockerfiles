@@ -1,0 +1,12 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: clusterip-goku
+spec:
+  type: ClusterIP
+  selector:
+    app: label-pod-goku-nodejs
+  ports:
+    - port: 3000
+      targetPort: 3000

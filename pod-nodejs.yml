@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: goku-nodejs
+  labels:
+    app: label-pod-goku-nodejs
+spec:
+  containers:
+    - name: container-pod-nodejs
+      image: alexandreponte/validadorcpfcnodejs
+      ports:
+        - containerPort: 3000
